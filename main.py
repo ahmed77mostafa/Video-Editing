@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-video = cv2.VideoCapture(r'236893_small.mp4')
+video = cv2.VideoCapture(r'46026-447087782_small.mp4')
 
 def video_brightness_contrast(frame,contrast,brightness):
     return cv2.convertScaleAbs(frame, alpha = 1 + contrast / 127, beta=brightness)
