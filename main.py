@@ -13,8 +13,8 @@ enhanced_kernel = np.array([
     [-1, -1, -1]
 ])
 while True:
-    res,frame = video.read()
-    if not res:
+    ret,frame = video.read()
+    if not ret:
         break
     adjusted_frame = video_brightness_contrast(frame,contrast = 10, brightness = 5)
     noise_frame = cv2.GaussianBlur(frame,noise_kernel,0)
